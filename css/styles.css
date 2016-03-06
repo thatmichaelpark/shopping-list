@@ -1,0 +1,98 @@
+html {
+  font-size: 50%;
+}
+body, input.newitem {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 2rem;
+}
+div.heading, div.main {
+  width: 30rem;
+  margin: 0 auto;
+}
+div.heading {
+  background: bisque;
+  margin: 0 auto;
+  padding: 0rem 1rem 1rem 1rem;
+}
+div.main {
+  background: teal;
+  padding: 1rem 1rem 1rem 1rem;
+}
+h1 {
+  text-align: center;
+  color: teal;
+  font-size: 4rem;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  height: 3rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: bisque;
+  padding: 1rem 5rem;
+  margin: 1rem;
+  display: none;
+}
+li.show {
+  display: block;
+}
+li.strikethrough {
+  text-decoration: line-through;
+}
+button.check {
+  background-color: white;
+  border: 1px solid gray;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  color: white;
+}
+button.check:not(.checked):hover {
+  color: lightgray;
+}
+button.check.checked {
+  color: black;
+}
+button.delete {
+  background-color: red;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  opacity: 0;
+  transition-duration: 350ms;
+}
+button.delete.show  {
+  opacity: 1;
+}
+input.newitem {
+  border: none;
+  width: 16rem;
+  margin: 0rem 0rem 0rem 5rem;
+  background: bisque;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+button.add {
+  background-color: lightgreen;
+  color: white;
+  font-size: 3rem;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
+}
