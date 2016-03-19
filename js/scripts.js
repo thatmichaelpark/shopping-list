@@ -1,7 +1,3 @@
-/* to do:
-Style Clear button
-add static image
-*/
 
 $(document).ready(function () {
   $('ul').on('mouseenter', 'li', function (){
