@@ -41,13 +41,18 @@ $(document).ready(function () {
    }
   });
   function addItem() {
-    $('#list').append('<li><button class="check">&#10004;</button>'+$('input.newitem').val()+'<button class="delete">✖</button></li>');
-    $('#list').children().last().slideDown(500);
-    $('input.newitem').val('');
+    if ($('input.newitem').val().trim()) {
+      $('#list').append('<li><button class="check">&#10004;</button>'+$('input.newitem').val()+'<button class="delete">✖</button></li>');
+      $('#list').children().last().slideDown(500);
+      $('input.newitem').val('');
+      $('input.newitem').focus();
+    }
   }
   function ClearAll() {
     $('ul').slideUp(500, function () {
       $('ul').empty().show();
     });
+    $('input.newitem').val('');
+    $('input.newitem').focus();
   }
 });
