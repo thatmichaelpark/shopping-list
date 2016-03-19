@@ -1,7 +1,10 @@
 html {
   font-size: 50%;
+  background-image: url("../img/bkgd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-body, input.newitem {
+body, input.newitem, button.clear {
   font-family: "Comic Sans MS", sans-serif;
   font-size: 2rem;
 }
@@ -95,4 +98,12 @@ button.add {
   height: 4rem;
   border-radius: 1.5rem;
   margin: 1rem;
+}
+button.clear {
+  font-size: 2rem;
+  border: none;
+  background-color: salmon;
+  border-radius: 1.5rem;
+  display: block;
+  margin: 0.5rem auto;
 }
